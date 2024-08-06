@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student List</title>
+</head>
+<body>
+<h1>Student List</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Student Code</th>
+        <th>Full Name</th>
+        <th>Address</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="student : ${students}">
+        <td th:text="${student.studentCode}">Student Code</td>
+        <td th:text="${student.fullName}">Full Name</td>
+        <td th:text="${student.address}">Address</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
+
